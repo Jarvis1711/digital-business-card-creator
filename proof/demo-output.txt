@@ -1,19 +1,19 @@
 GET /api/health
-{"status":"ok","app":"Digital Business Card Creator","domain":"Business & Commerce"}
+{"status":"ok"}
 
 GET /api/schema
-{"statuses":["draft", "quoted", "approved", "fulfilled"],"fields":[{"key":"client_name"},{"key":"estimated_value"},{"key":"delivery_notes"}]}
+{"domain":"General","entity":"Domain Record","statuses":["new", "active", "done"]}
 
-POST /api/records
+POST /api/items
 {
   "id": 1,
-  "title": "Demo Record",
-  "status": "quoted",
+  "title": "Phase3 Demo",
+  "status": "new",
   "payload": {
-    "client_name": "Demo value",
-    "estimated_value": 12,
-    "delivery_notes": "seed note"
+    "owner": "sample",
+    "impact_score": 5,
+    "notes": "notes"
   },
-  "created_at": "2026-03-24T15:52:21.922355+00:00",
-  "updated_at": "2026-03-24T15:52:21.922355+00:00"
+  "created_at": "2026-03-24T16:15:11.131897+00:00",
+  "updated_at": "2026-03-24T16:15:11.131897+00:00"
 }
